@@ -1,0 +1,158 @@
+.technologies__imgWrap {
+    background: url("/images/technologies-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 163px;
+    border-radius: 140px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.technologies__images {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.images__item {
+    background-size: cover;
+    height: auto;
+    width: 25%;
+    padding: 0 40px;
+}
+
+.technologies__imagesWrap {
+    width: 100%;
+}
+
+.unreal {
+    margin: auto;
+    width: 140px;
+}
+
+.unity {
+    margin: auto;
+    width: 220px;
+}
+.oculus {
+    margin: auto;
+    width: 230px;
+}
+.vive {
+    margin: auto;
+    width: 250px;
+}
+
+.technologies {
+    margin-bottom: 72px;
+}
+
+.technologies__images .slick-prev, 
+.technologies__images .slick-next {
+   width: 0;
+   height: 0;
+   z-index: 1;
+}
+
+.technologies__images .slick-next {
+    right: 3%;
+}
+
+.technologies__images .slick-prev {
+    left: 3%;
+}
+
+.technologies__images button.slick-prev:before,
+.technologies__images button.slick-next:before {
+    color: #C0B7E8;
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    width: 56px;
+    height: 56px;
+    padding: 9px;
+    margin: -25px -28px;
+    background: rgba(14, 14, 14, 0.32);
+}
+
+
+
+.technologies__images .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .technologies__imgWrap {
+        height: 303px;
+        margin-bottom: 60px;
+        position: relative;
+       
+    }
+    .technologies__images {
+        width: 100%;
+    }
+
+    .down-arrow-wrap {
+        width: 100px;
+        height: 100px;
+        display: block;
+        transform: translateY(150%);
+        border-radius: 50%;
+        position: absolute;
+        padding: 9px;
+        background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+        border: 12px solid #211E2E;
+        cursor: pointer;
+    }
+
+    .down-arrow {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background: url("/images/down.svg") no-repeat;
+        display: block;
+        
+    }
+
+    .images__item {
+        padding: 0;
+    }
+    .unreal {
+        width: 174px;
+    }
+    
+    .unity {
+        width: 252px;
+    }
+    .oculus {
+        width: 263px;
+    }
+    .vive {
+        width: 282px;
+    }
+
+}
+
+
+@media (min-width: 1300px) {
+    .technologies__images {
+         justify-content: space-between;
+         width: 100%;
+    }
+
+    .images__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .technologies__imgWrap {
+        margin-bottom: 60px;
+    }
+    .technologies {
+        margin-bottom: 72px;
+    }
+}

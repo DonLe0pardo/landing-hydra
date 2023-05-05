@@ -1,0 +1,266 @@
+
+@import url("../vendor/stylesheet.css"); 
+@import url("../styles/parts/header.css");
+@import url("../styles/parts/footer.css");
+@import url("../styles/parts/virtual.css");
+@import url("../styles/parts/about.css");
+@import url("../styles/parts/build.css");
+@import url("../styles/parts/technologies.css");
+@import url("../styles/parts/join.css");
+@import url("../styles/parts/how.css");
+
+
+
+
+*,
+*::before,
+*::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #302C42;
+    color: #fff;
+    /* overflow-x: hidden; */
+}
+
+p,
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 15px;
+}
+
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px;
+}
+    
+/* h1 {
+    font-size: 24px;
+    line-height: 32px;
+} */
+
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 16px;
+}
+    
+.titleSlim {
+    font-weight: 300;
+    margin-top: 11px;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+ul > li {
+    list-style: none;
+}
+    
+
+
+.page {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+}
+
+.button__textLight,
+.button__textDark {
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    display: block;
+  }
+
+  .button__textLight {
+    padding: 16px 21px;
+  }
+
+  .button__textDark {
+    padding: 18px 21px;
+    color: #343045;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: none;
+}
+
+.button_noColor.button_header {
+    margin-bottom: 15px;
+}
+
+.logoWrap {
+    display: block;
+    max-width: 185px;
+}
+
+.logoTextWrap {
+    display: block;
+    max-width: 76px;
+    width: 46px;
+    margin-bottom: 15px;
+}
+
+.logoWrap_header {
+    margin-right: 11px;
+    width: 69px;
+}
+
+
+main {
+    flex: 1 0 auto;
+    margin-top: 140px;
+  }
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: calc(100% - 162px);
+    }
+
+    .logoWrap_header {
+        margin-right: 15px;
+        width: 104px;
+    }
+
+    .logoTextWrap {
+        width: 76px;
+        margin-bottom: 0;
+    }
+    p,
+    li {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+
+
+    .button__textDark:hover {
+        background: rgba(33,30,46,1);
+        transition: background .6s ease-out; 
+        color: #C0B7E8;
+    }
+
+    .button__textDark:active {
+        border: 2px solid #C0B7E8;
+        padding: 16px 19px;
+    }
+
+    .button__textLight:hover {
+        background: #FFFFFF;
+        color: #302C42;
+        transition: background .6s ease-out; 
+    }
+
+    .button__textLight:active {
+        border: 2px solid #343045;
+    }
+
+    .item_hover:hover {
+        text-shadow: #C0B7E8 1px 0 10px;
+        cursor: pointer;
+    }
+    .item_hover:active {
+        text-shadow: #C0B7E8 6px 0px 27px;
+    }
+
+    .main {
+        margin-top: 190px;
+    }
+    
+}
+
+
+
+@media (min-width: 1000px) {
+    .container_header {
+        padding-top: 45px;
+    }
+    .button_noColor {
+        margin-right: 10px;
+    }
+    .button_noColor {
+        margin-bottom: 0;
+    }
+    .button_noColor.button_header {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    .main {
+        margin-top: 260px;
+    }
+    
+}
+

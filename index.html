@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png">
+    <link rel="manifest" href="./static/manifest.json">
+    <link rel="mask-icon" href="./static/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Hydra</title>
+    <link rel="stylesheet" href="index.css">
+ 
+    <script src="./js/slaider.js" defer></script>
+    <script src="./js/navScroll.js" defer></script>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header class="header">
+            <div class="container container_header">
+                <div class="header__logoWrap">
+                    <a class="logoWrap logoWrap_header" href="/">
+                        <img class="logo" src="./images/logo.svg" alt="logo">
+                    </a>
+                    <a class="logoTextWrap" href="/">
+                        <img class="logoText" src="./images/logoText.svg" alt="logoText">
+                    </a>
+                </div>
+                <div class="header__content">
+                    <nav class="header__nav">
+                        <ul class="navList">
+                            <!-- <li class="navList__item item_hover">ABOUT</li> -->
+                            <li class="navList__item item_hover"><a href="#about">ABOUT</a></li>
+                            <li class="navList__item item_hover"><a href="#build">SERVICES</a></li>
+                            <li class="navList__item item_hover"><a href="#technologies">TECHNOLOGIES</a></li>
+                            <li class="navList__item item_hover"><a href="#how">HOW TO</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__buttonsWrap">
+                        <button class="button button_noColor button_header">
+                            <a class="button__textLight" href="#virtual__contacts">CONTACT US</a>
+                        </button>
+                        <button class="button button_color button_header">
+                            <a class="button__textDark" href="#join">JOIN HYDRA</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="virtual">
+                <div class="container container_virtual">
+                    <div class="virtual__content">
+                        <div class="virtualImgWrap">
+                            <img class="virtualImg" src="./images/virtual.png" alt="virtual-img">
+                        </div>
+                        <div class="virtual__main">
+                            <strong class="strong"><span class="strongTopGradient">Dive</span> Into The Depths <br />Of
+                                <span class="strongBottomGradient">Virtual Reality</span></strong>
+                            <p class="virtualText">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                nisl tincidunt eget. Lectus mauris eros in vitae.</p>
+                            <button class="button button_color button_virtual">
+                                <a class="button__textDark" href="#build__cardsWrap">BUILD YOUR WORLD</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="virtual__contacts" id="virtual__contacts">
+                        <div class="contacts__list">
+                            <div class="contacts__item-wrap">
+                                <div class="contacts__item">
+                                    <div class="contacts__imgWrap contacts__imgWrap_location">
+                                        <img src="./images/location.svg" alt="location-ico.svg">
+                                    </div>
+                                    <div class="contacts__text-wrap">
+                                        <h3 class="contacts__title">Pay Us a Visit</h3>
+                                        <p class="contacts__text item_hover">Union St, Seattle, WA 98101, United States
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__item-wrap">
+                                <div class="contacts__item">
+                                    <div class="contacts__imgWrap contacts__imgWrap_phone">
+                                        <img src="./images/phone.svg" alt="phone-ico.svg">
+                                    </div>
+                                    <div class="contacts__text-wrap">
+                                        <h3 class="contacts__title">Give Us a Call</h3>
+                                        <p class="contacts__text"><a class="contacts__tel item_hover"
+                                                href="tel:+(110) 1111-1010">(110) 1111-1010</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__item-wrap">
+                                <div class="contacts__item">
+                                    <div class="contacts__imgWrap contacts__imgWrap_mail">
+                                        <img src="./images/mail.svg" alt="mail-ico.svg">
+                                    </div>
+                                    <div class="contacts__text-wrap">
+                                        <h3 class="contacts__title">Send Us a Message</h3>
+                                        <p class="contacts__text"><a class="contacts__email item_hover"
+                                                href="mailto:Contact@HydraVTech.com">Contact@HydraVTech.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container container_about">
+                    <div class="about__introduction">
+                        <h2 class="introduction__title">INTRODUCTION <br /><span class="titleSlim">TO HYDRA VR</span>
+                        </h2>
+                        <p class="introduction__text">Vitae sapien pellentesque habitant morbi tristique senectus et
+                            netus et. Feugiat
+                            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+                    </div>
+                    <div class="about__content">
+                        <div class="about__imgWrap">
+                            <img class="about__img" src="./images/about.png" alt="about-img">
+                        </div>
+                        <div class="about__textWrap">
+                            <h2 class="about__title">ABOUT <br /><span class="titleSlim">HYDRA VR</span></h2>
+                            <p class="about__text">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
+                                mattis rhoncus
+                                urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida
+                                dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in.
+                                Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet
+                                sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
+                                etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet
+                                cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+                                retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+                                n tempor.</p>
+                            <button class="button button_color button_about">
+                                <a class="button__textDark" href="#join">LET’S GET IN TOUCH</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="build" id="build">
+                <div class="container container_build">
+                    <div class="build__textWrap">
+                        <h2 class="build__title">WHY BUILD <br /><span class="titleSlim">WITH HYDRA?</span></h2>
+                        <p class="build__text">Vitae sapien pellentesque habitant morbi tristique senectus et
+                            netus et. Feugiat
+                            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+                    </div>
+                    <div class="build__cardsWrap" id="build__cardsWrap">
+                        <div class="build__cards">
+                            <div class="cards__item">
+                                <div class="cards__imgWrap">
+                                    <img class="cards__img" src="./images/simulation.png" alt="simulation-img">
+                                </div>
+                                <h3 class="cards__title">SIMULATION</h3>
+                                <p class="cards__text">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</p>
+                                <button class="button button_color button_cards">
+                                    <a class="button__textDark" href="#join">TRY IT NOW</a>
+                                </button>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__imgWrap">
+                                    <img class="cards__img" src="./images/education.png" alt="education-img">
+                                </div>
+                                <h3 class="cards__title">EDUCATION</h3>
+                                <p class="cards__text">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</p>
+                                <button class="button button_color button_cards">
+                                    <a class="button__textDark" href="#join">TRY IT NOW</a>
+                                </button>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__imgWrap">
+                                    <img class="cards__img" src="./images/self-care.png" alt="self-care-img">
+                                </div>
+                                <h3 class="cards__title">SELF-CARE</h3>
+                                <p class="cards__text">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</p>
+                                <button class="button button_color button_cards">
+                                    <a class="button__textDark" href="#join">TRY IT NOW</a>
+                                </button>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__imgWrap">
+                                    <img class="cards__img" src="./images/outdoor.png" alt="outdoor-img">
+                                </div>
+                                <h3 class="cards__title">OUTDOOR</h3>
+                                <p class="cards__text">Vitae sapien pellentesque habitant morbi
+                                    nunc. Viverra aliquet porttitor rhoncus
+                                    libero justo laoreet sit amet vitae.</p>
+                                <button class="button button_color button_cards">
+                                    <a class="button__textDark" href="#join">TRY IT NOW</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="technologies" id="technologies">
+                <div class="container container_technologies">
+                    <div class="technologies__imgWrap">
+                        <h4 class="how__technologies">TECHNOLOGIES & HARDWARE <br /><span class="titleSlim">USED BY
+                                HYDRA VR.</span></h4>
+                        <div class="down-arrow-wrap">
+                            <a class="down-arrow" href="#how"></a>
+                        </div>
+                    </div>
+
+                    <div class="technologies__imagesWrap">
+                        <ul class="technologies__images">
+                            <li class="images__item"><img class="unreal" src="./images/unreal.png" alt="unreal-img">
+                            </li>
+                            <li class="images__item"><img class="unity" src="./images/unity.png" alt="unity-img"></li>
+                            <li class="images__item"><img class="oculus" src="./images/oculus.png" alt="oculus-img">
+                            </li>
+                            <li class="images__item"><img class="vive" src="./images/vive.png" alt="vive-img"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how" id="how">
+                <div class="container container_how">
+                    <div class="how__textWrap">
+                        <h2 class="how__title">HOW WE BUILD <br /><span class="titleSlim">WITH HYDRA VR?</span></h2>
+                        <p class="how__text">Vitae sapien pellentesque habitant morbi tristique senectus et
+                            netus et. Feugiat
+                            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+                    </div>
+                    <div class="how__listWrap">
+                        <ul class="how-list">
+                            <li class="how-list__item">
+                                <div class="how-list__inner">
+                                    <div class="how-list__circle">
+                                        <div class="circle">01</div>
+                                    </div>
+                                    <h3 class="how-list__title">3D Conception </br>& Design</h3>
+                                </div>
+                            </li>
+                            <li class="how-list__item">
+                                <div class="how-list__inner">
+                                    <div class="how-list__circle">
+                                        <div class="circle">02</div>
+                                    </div>
+                                    <h3 class="how-list__title">Interaction </br>
+                                        Design</h3>
+                                </div>
+                            </li>
+                            <li class="how-list__item">
+                                <div class="how-list__inner">
+                                    <div class="how-list__circle">
+                                        <div class="circle">03</div>
+                                    </div>
+                                    <h3 class="how-list__title">VR World </br>
+                                        User Testing</h3>
+                                </div>
+                            </li>
+                            <li class="how-list__item">
+                                <div class="how-list__inner">
+                                    <div class="how-list__circle">
+                                        <div class="circle">04</div>
+                                    </div>
+                                    <h3 class="how-list__title">Hydra VR </br>
+                                        Deploy</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="join" id="join">
+                <div class="container container_join">
+                    <div class="join__contentWrap">
+                        <h3 class="join__title"> <span class="titleBorder">JOIN HYDRA</span> <br /><span
+                                class="titleSlim">Let’s Build Your VR
+                                Experience</span></h3>
+                        <form class="join__form" action="">
+                            <div class="join__inputWrap">
+                                <input class="join__input join__firstName" type="text" placeholder="First Name">
+                                <input class="join__input join__lastName" type="text" placeholder="Last Name">
+                            </div>
+                            <div class="join__inputWrap">
+                                <input class="join__input join__email" type="email" placeholder="Email">
+                                <input class="join__input join__phoneNumber" type="tel" placeholder="Phone Number">
+                            </div>
+                            <div class="join__inputWrap">
+                                <input class="join__input join__subject" type="text" placeholder="Subject">
+                            </div>
+                            <div class="join__inputWrap">
+                                <!-- cols="20" rows="20" -->
+                                <textarea class="join__textarea" placeholder="Tell Us Something..."></textarea>
+                            </div>
+                            <button class="button button_color button_join" type="submit">
+                                <a class="button__textDark" href="#">SEND TO HYDRA</a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer__content">
+                    <div class="content__item footer__logo">
+                        <a class="logoWrap logoWrap_footer" href="/">
+                            <img class="logo" src="./images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="content__item documents documents_noBorder">
+                        <ul class="documentsList">
+                            <li class="documentsList__item item_hover">ABOUT</li>
+                            <li class="documentsList__item item_hover">SERVICES</li>
+                            <li class="documentsList__item item_hover">TECHNOLOGIES</li>
+                            <li class="documentsList__item item_hover">HOW TO</li>
+                            <li class="documentsList__item item_hover">JOIN HYDRA</li>
+                        </ul>
+                    </div>
+                    <div class="content__item documents">
+                        <ul class="documentsList">
+                            <li class="documentsList__item item_hover">F.A.Q</li>
+                            <li class="documentsList__item item_hover">SITEMAP</li>
+                            <li class="documentsList__item item_hover">CONDITIONS</li>
+                            <li class="documentsList__item item_hover">LICENSES</li>
+                        </ul>
+                    </div>
+                    <div class="content__item documents__network">
+
+                        <div class="networkWrap">
+                            <p class="networkText">SOCIALIZE WITH HYDRA</p>
+                            <ul class="networkList">
+                                <li class="networkList__item">
+                                    <img class="network__iconItem" src="./images/facebook.svg" alt="facebook-img">
+                                </li>
+                                <li class="networkList__item">
+                                    <img class="network__iconItem" src="./images/twitter.svg" alt="twitter-img">
+                                </li>
+                                <li class="networkList__item">
+                                    <img class="network__iconItem" src="./images/linkedin.svg" alt="linkedin-img">
+                                </li>
+                                <li class="networkList__item">
+                                    <img class="network__iconItem" src="./images/youtube.svg" alt="youtube-img">
+                                </li>
+                                <li class="networkList__item">
+                                    <img class="network__iconItem" src="./images/instagram.svg" alt="instagram-img">
+                                </li>
+                                <li class="networkList__item">
+                                    <img class="network__iconItem" src="./images/pinterest.svg" alt="pinterest-img">
+                                </li>
+                            </ul>
+                            <button class="button button_color button_footer">
+                                <a class="button__textDark" href="#build__cardsWrap">BUILD YOUR WORLD</a>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer__year">
+                    <ul class="footer__yearList">
+                        <li class="yearList__item">2023 © HYDRA LANDING PAGE</li>
+                        <li class="yearList__item">BY ZINE. E. FALOUTI</li>
+                        <li class="yearList__item">ALL RIGHTS RESERVED</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

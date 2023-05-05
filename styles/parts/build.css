@@ -1,0 +1,144 @@
+.build {
+    margin-bottom: 56px;
+}
+
+.build__text {
+    display: none;
+}
+.build__title {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+
+.build__cards {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cards__imgWrap {
+    margin: 0 auto;
+    margin-bottom: 23px;
+    border-radius: 50%;
+    max-width: 220px;
+    border: 13px solid rgba(14, 14, 14, 0.32);
+}
+
+.cards__img {
+    border-radius: 50%;
+}
+
+.cards__text {
+    margin-bottom: 25px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.cards__item {
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    border-radius: 40px;
+    padding: 23px 25px 40px 25px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.cards__title {
+    border-bottom: 1px solid rgba(192, 183, 232, 0.33);
+    padding-bottom: 17px;
+    margin-bottom: 13px;
+    display: inline-block;
+}
+
+
+.build__cardsWrap {
+    width: 100%;
+}
+
+.build__cards .slick-prev, 
+.build__cards .slick-next {
+   width: 0;
+   height: 0;
+   z-index: 1;
+}
+
+.build__cards .slick-next {
+    right: 3%;
+}
+
+.build__cards .slick-prev {
+    left: 3%;
+}
+
+.build__cards button.slick-prev:before,
+.build__cards button.slick-next:before {
+    color: #C0B7E8;
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    width: 56px;
+    height: 56px;
+    padding: 9px;
+    margin: 0 -28px;
+    background: rgba(14, 14, 14, 0.32);
+}
+
+
+
+@media (min-width: 768px) {
+    .build__text {
+        display: block;
+    }
+    .build__cards {
+        width: 100%;
+    }
+
+    .build__textWrap {
+        margin-bottom: 65px;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .build__textWrap {
+        display: flex;
+    }
+    .build__title {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .build__title {
+        width: 50%;
+    }
+    .build__text {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .build {
+        margin-bottom: 100px;
+    }
+    .build__text {
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .cards__item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cards__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .button_cards {
+        width: 154px;
+    }
+}

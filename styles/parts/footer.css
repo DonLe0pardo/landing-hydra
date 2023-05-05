@@ -1,0 +1,192 @@
+.footer {
+    flex: 0 0 auto;
+}
+.yearList__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.13em;
+}
+
+.yearList__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+.footer__yearList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+
+.footer__year {
+    padding: 38px 0 89px 0;
+}
+
+
+.footer__content {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #343045, #c0b7e8, #343045 ) 47% 0%;
+    padding-bottom: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.documents {
+    display: none;
+}
+
+.logoWrap_footer {
+    width: 185px;
+    margin-bottom: 56px;
+}
+
+
+.networkText {
+    margin-bottom: 29px;
+}
+
+.button_footer {
+    width: 100%;
+}
+
+.networkList {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.networkList__item {
+    width: 32px;
+    height: 32px;
+}
+
+.network__iconItem {
+    width: 32px;
+    height: 32px; 
+}
+
+.networkList__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.documentsList__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* @media (min-width: 450px) {
+
+} */
+
+@media (min-width: 768px) {
+    .documents {
+        display: flex;
+    }
+    .footer__content{
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: start;
+        align-items: stretch;
+        padding-bottom: 27px;
+    }
+    .documents {
+        width: 50%;
+    }
+    .documents__network {
+        width: 50%;
+    }
+    .footer__logo {
+        width: 50%;
+    }
+
+    .button_footer {
+        max-width: 214px;
+    }
+    
+    .documentsList {
+        margin: 0 auto;
+    }
+
+    .content__item {
+        margin-bottom: 50px;
+    }
+
+    .content__item:not(:last-child) {
+        border-right: 6px solid;
+        border-image: linear-gradient(#343045, #c0b7e8, #343045) 1;
+    }
+
+    .documents.documents_noBorder {
+        border-right: none;
+    }
+    .logoWrap_footer {
+        margin: 0 auto;
+    }
+
+    .networkWrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (min-width: 900px) {
+    .yearList__item:before {
+        content:  "-";
+        position: relative;
+        left: -5px;
+    } 
+    .footer__yearList {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .yearList__item:not(:last-child) {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .footer__year {
+        padding: 49px 0 59px 0;
+    }
+    .footer__content {
+        padding-bottom: 77px;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .documents {
+        width: 24%;
+    }
+    .documents__network {
+        width: 30%;
+    }
+    .footer__logo {
+        width: 24%;
+    }
+    .logoWrap_footer {
+        margin-bottom: 0;
+    }
+    .documents.documents_noBorder {
+        border-right: 6px solid;
+    }
+    .networkWrap {
+        width: 90%;
+        margin: 0;
+        margin-left: auto;
+        
+    }
+    .content__item {
+        margin-bottom: 0;
+    }
+    
+    
+}
+
+
+
+
+

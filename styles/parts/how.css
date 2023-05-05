@@ -1,0 +1,141 @@
+.how {
+    margin-bottom: 112px;
+}
+
+.how__text {
+    display: none;
+}
+
+.how__title {
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.how-list {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.how-list__item {
+    text-align: center;
+}
+
+.how-list__inner {
+    display: inline-block;
+}
+
+.how__technologies {
+    text-align: center;
+}
+
+.how__textWrap {
+    margin-bottom: 37px;
+}
+
+
+.how-list__circle {
+    width: 198px;
+    height: 198px;
+    border-radius: 50%;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border: 19px solid #211E2E;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+.circle {
+    border-radius: 50%;
+    font-size: 64px;
+    color: #343045;
+    font-weight: 700;
+}
+
+.how__listWrap {
+    width: 100%;
+}
+
+
+.how-list .slick-prev, 
+.how-list .slick-next {
+   width: 0;
+   height: 0;
+   z-index: 1;
+}
+
+.how-list .slick-next {
+    right: 3%;
+}
+
+.how-list .slick-prev {
+    left: 3%;
+}
+
+.how-list button.slick-prev:before,
+.how-list button.slick-next:before {
+    color: #C0B7E8;
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    width: 56px;
+    height: 56px;
+    padding: 9px;
+    margin: -25px -28px;
+    background: rgba(14, 14, 14, 0.32);
+}
+
+
+
+.how-list .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .how__text {
+        display: block;
+    }
+    .how-list {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+   .how__textWrap {
+    display: flex;
+    margin-bottom: 85px;
+   }
+   .how__title {
+    width: 50%;
+    margin-bottom: 0;
+    margin-right: 15px;
+    text-align: left;
+   }
+   .how__text {
+    width: 100%;
+   }
+}
+
+@media (min-width: 1200px) {
+    .how__text {
+        width: 50%;
+       }
+    .how-list__item {
+        width: 25%;
+    }
+    .how-list__circle{
+        margin-bottom: 25px;
+    }
+    .how__title {
+        margin-right: 0; 
+    }
+}
+
+
+
+
+
