@@ -1,13 +1,13 @@
 
-@import url("../vendor/stylesheet.css"); 
-@import url("../styles/parts/header.css");
-@import url("../styles/parts/footer.css");
-@import url("../styles/parts/virtual.css");
-@import url("../styles/parts/about.css");
-@import url("../styles/parts/build.css");
-@import url("../styles/parts/technologies.css");
-@import url("../styles/parts/join.css");
-@import url("../styles/parts/how.css");
+@import url("vendor/stylesheet.css"); 
+@import url("styles/parts/header.css");
+@import url("styles/parts/footer.css");
+@import url("styles/parts/virtual.css");
+@import url("styles/parts/about.css");
+@import url("styles/parts/build.css");
+@import url("styles/parts/technologies.css");
+@import url("styles/parts/join.css");
+@import url("styles/parts/how.css");
 
 
 
@@ -177,7 +177,7 @@ main {
     margin-top: 140px;
   }
 
-
+  
 
 @media (min-width: 768px) {
     .container {

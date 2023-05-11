@@ -1,5 +1,5 @@
 .technologies__imgWrap {
-    background: url("/images/technologies-bg.png") no-repeat;
+    /* background: url('../images/technologies-bg.png') no-repeat; */
     background-size: 100% 100%;
     width: 100%;
     display: flex;
@@ -9,6 +9,7 @@
     border-radius: 140px;
     flex-direction: column;
     margin-bottom: 30px;
+    
 }
 .technologies__images {
     display: flex;
@@ -115,7 +116,7 @@
         border-radius: 50%;
         width: 60px;
         height: 60px;
-        background: url("/images/down.svg") no-repeat;
+        /* background-image: url('../images/down.svg') no-repeat; */
         display: block;
         
     }

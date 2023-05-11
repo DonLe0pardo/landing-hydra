@@ -31,7 +31,6 @@
 }
 
 .button_about {
-    /* max-width: 276px; */
     width: 90%;
 }
 
@@ -82,7 +81,6 @@
         margin-bottom: 0;
     }
     .introduction__text {
-        /* width: 50%; */
         width: 100%;
     }
     .about__imgWrap {
@@ -101,18 +99,6 @@
 }
 
 @media (min-width: 1200px) {
-    /* .about__content {
-        display: flex;
-        justify-content: space-between;
-    } */
-    /* .about__imgWrap {
-        width: 50%;
-        float: none;
-    } */
-    /* .about__textWrap {
-        width: 50%;
-    } */
-
     .introduction__text {
         width: 50%;
     }
